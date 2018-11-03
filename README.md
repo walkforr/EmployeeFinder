@@ -13,3 +13,5 @@ Behind the scenes, what is happening:
 - After the above steps are completed, a newArray is created that contains the differences between the user input and the other employees' inputs.
 
 - Then we find the item in the array with the smallest difference. It will always be the user input, equaling to zero, so we have to do newArray.slice(0, newArray.length -1) to return the lowest value in the array excluding the last number in the array(the user input.)
+
+- Finally, we push the employeeList to the req.body and return the response so it is accesible to use in our ajax function.
